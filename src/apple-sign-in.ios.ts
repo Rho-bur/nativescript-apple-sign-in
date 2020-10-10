@@ -1,5 +1,5 @@
-import { device } from "tns-core-modules/platform";
-import { ios as iOSUtils } from "tns-core-modules/utils/utils";
+import { Device } from "@nativescript/core";
+import { iOSNativeHelper as iOSUtils } from "@nativescript/core/utils";
 import {
   SignInWithAppleAuthorization,
   SignInWithAppleOptions,
@@ -19,7 +19,7 @@ declare const ASAuthorizationAppleIDProvider,
   ASAuthorizationScopeFullName: any;
 
 export function isSignInWithAppleSupported(): boolean {
-  return parseInt(device.osVersion) >= 13;
+  return parseInt(Device.osVersion) >= 13;
 }
 
 export function getSignInWithAppleState(

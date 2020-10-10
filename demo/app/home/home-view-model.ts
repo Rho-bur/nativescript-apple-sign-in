@@ -1,6 +1,7 @@
-import { Observable } from "tns-core-modules/data/observable";
+import { Observable } from "@nativescript/core";
 import { signInWithApple, isSignInWithAppleSupported, getSignInWithAppleState, SignInWithAppleAuthorization } from "nativescript-apple-sign-in";
 
+@NativeClass()
 export class HomeViewModel extends Observable {
 
     private user: string;
