@@ -12,9 +12,9 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
+    "@nativescript/core": "~7.0.0",
     "nativescript-apple-sign-in": "file:../src",
-    "nativescript-theme-core": "~1.0.6",
-    "@nativescript/core": "~7.0.0"
+    "nativescript-theme-core": "~1.0.6"
   },
   "devDependencies": {
     "nativescript-dev-webpack": "~1.5.1",
